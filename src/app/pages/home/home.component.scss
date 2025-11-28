@@ -1,0 +1,30 @@
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .card-link {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: transform 0.2s;
+        }
+        .card-link:hover .card {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .card { /* Basic card styling, adjust as needed */
+            padding: 12px;
+            background-color: var(--surface-card);
+            border-radius: var(--content-border-radius); /* Changed to content-border-radius */
+            overflow: hidden; /* Ensures inner content doesn't overflow rounded corners */
+        }
+        .p-card-header {
+            border-bottom: 1px solid var(--surface-border);
+            margin-bottom: 1rem;
+        }
+        .p-card-subheader {
+            color: var(--text-color-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+    
